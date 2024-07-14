@@ -10,6 +10,11 @@ html {
     box-sizing: inherit;
 }
 
+:root {
+    --black-color: #2F2E2E;
+    --green-color: #254D4D;
+}
+
 h1,
 h2,
 h3,
@@ -23,6 +28,8 @@ p {
 
 body {
     margin: 0;
+    font-family: "Playfair Display", serif;
+    color: var(--black-color);
 }
 
 main {
@@ -32,11 +39,6 @@ main {
 ul {
     margin: 0;
     padding: 0;
-}
-
-:root {
-    --black-color: #2F2E2E;
-    --green-color: #254D4D;
 }
 
 .header {
@@ -60,7 +62,6 @@ ul {
     font-family: "Barlow", sans-serif;
     font-weight: 600;
     font-size: 42px;
-    color: var(--black-color);
     margin-right: 300px;
 }
 
@@ -169,9 +170,7 @@ ul {
 }
 
 .text-h1 {
-    font-family: "Playfair Display", serif;
     font-size: 51px;
-    color: var(--black-color);
 }
 
 .overview p {
@@ -188,12 +187,13 @@ ul {
     padding: 16px 0 64px;
     text-align: center;
 }
+
 .services-content {
     margin-top: 44px;
     display: flex;
     justify-content: space-around;
-    font-family: "Playfair Display", serif;
 }
+
 .services-content-item h4 {
     font-weight: 900;
     font-size: 27px;
@@ -205,6 +205,44 @@ ul {
     max-width: 158px;
 }
 
+/* About */
+.about {
+    padding: 76px 0 94px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 84px;
+}
+
+.about-img {
+    max-width: 735px;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-text {
+    max-width: 456px;
+}
+
+.about-text p {
+    font-size: 31px;
+    padding: 26px 0 36px;
+}
+
+.about-text a {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+
 
 
 
@@ -212,14 +250,17 @@ ul {
     .header {
         padding: 27px 15px 0;
     }
+
     .navigation {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .logo {
         font-size: 38px;
         margin-right: 100px;
     }
+
     .navigation ul {
         margin-right: 0;
     }
@@ -229,16 +270,20 @@ ul {
     .top {
         margin-top: 30px;
     }
+
     .overview {
         width: 591px;
         height: 450px;
     }
+
     .text-h1 {
         font-size: 44px;
     }
+
     .overview p {
         font-size: 26px;
     }
+
 }
 
 @media screen and (max-width: 813px) {
@@ -246,21 +291,30 @@ ul {
         margin: 0;
         font-size: 34px;
     }
+
+    .about-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
 }
 
 @media screen and (max-width: 695px) {
     .navigation {
         gap: 10px;
     }
+
     .overview {
         top: 25px;
         max-width: 440px;
         max-height: 350px;
         padding: 50px 45px 40px 32px;
     }
+
     .text-h1 {
         font-size: 34px;
     }
+
     .overview p {
         font-size: 24px;
     }
@@ -270,6 +324,7 @@ ul {
     .logo {
         font-size: 28px;
     }
+
     .navigation ul a {
         width: 80px;
         font-size: 16px;
@@ -286,9 +341,11 @@ ul {
     .text-h1 {
         font-size: 26px;
     }
+
     .overview p {
         font-size: 18px;
     }
+
     .overview {
         max-height: 250px;
         padding: 50px 10px 30px 40px;
@@ -297,5 +354,16 @@ ul {
     .overview-text {
         max-width: 250px;
         margin: 0;
+    }
+
+    .about {
+        padding: 36px 15px 46px;
+    }
+    .about-text p {
+        font-size: 21px;
+    }
+    
+    .about-text a {
+        font-size: 14px;
     }
 }
