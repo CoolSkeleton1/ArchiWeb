@@ -82,6 +82,10 @@ ul {
     color: var(--black-color);
 }
 
+.navigation ul li:first-child {
+    font-weight: bold;
+}
+
 .navigation ul a:hover {
     font-weight: bold;
     transition: all 0.3s ease;
